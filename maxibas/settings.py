@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--%*_&l)lx2^(%q%r0waxypuxmc3pf1awm&!m)h79c^qorl1&96
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','maxibas.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','maxibas.vercel.app']
 
 WEBSITE_URL = 'http://127.0.0.1:8000'
 
@@ -93,7 +93,10 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'maxibas.wsgi.application'
+#WSGI_APPLICATION = 'maxibas.wsgi.application'
+
+# vercel_app/settings.py
+WSGI_APPLICATION = 'maxibas.wsgi.app'
 
 
 # Database
